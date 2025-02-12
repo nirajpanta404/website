@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niraj Panta - Portfolio</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #FFB347, #FF6347, #FFD700);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            flex-direction: column;
+            border: 5px solid blue;
+        }
+        .warning {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+            border: 2px solid red;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+        .message {
+            font-size: 20px;
+            color: gold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+        .emoji-display {
+            font-size: 48px;
+            font-family: "Press Start 2P", cursive;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script>
+        function dangerClicked() {
+            document.getElementById("emoji").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="warning" onclick="dangerClicked()">⚠ DANGER ⚠</div>
+    <div class="message">Website is under construction. Hope you visit soon!</div>
+    <div id="emoji" class="emoji-display">⚠⚠⚠</div>
+</body>
+</html>
