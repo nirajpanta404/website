@@ -6,52 +6,50 @@
     <title>Niraj Panta - Portfolio</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background: black;
             color: #fff;
             font-family: Arial, sans-serif;
-            text-align: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
             flex-direction: column;
-            border: 5px solid blue;
+            justify-content: space-between;
+            min-height: 100vh;
         }
-        .warning {
-            font-size: 24px;
-            font-weight: bold;
-            color: red;
-            border: 2px solid red;
-            padding: 10px;
-            margin-bottom: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            cursor: pointer;
+        .container {
+            max-width: 800px;
+            margin: auto;
+            flex-grow: 1;
         }
-        .message {
-            font-size: 20px;
+        h1 {
+            text-align: center;
+            font-size: 36px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+        .contact {
+            text-align: center;
+            margin-top: auto;
+            padding-top: 20px;
+        }
+        a {
             color: gold;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-        }
-        .emoji-display {
-            font-size: 48px;
-            font-family: "Press Start 2P", cursive;
-            margin-top: 20px;
-            display: none;
+            text-decoration: none;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script>
-        function dangerClicked() {
-            let emojiDiv = document.getElementById("emoji");
-            emojiDiv.style.display = "block";
-            emojiDiv.innerHTML += "⚠"; // Append a warning sign each time it's clicked
-        }
-    </script>
 </head>
 <body>
-    <div class="warning" onclick="dangerClicked()">⚠ DANGER ⚠</div>
-    <div class="message">Website is under construction. Hope you visit soon!</div>
-    <div id="emoji" class="emoji-display">⚠⚠⚠</div>
+    <div class="container">
+        <h1>Niraj Panta</h1>
+        <p>Hello, it's me Niraj Panta.</p>
+        <p>I am currently doing mechanical engineering.</p>
+    </div>
+    
+    <div class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:nirajpant16@gmail.com">nirajpant16@gmail.com</a></p>
+    </div>
 </body>
 </html>
